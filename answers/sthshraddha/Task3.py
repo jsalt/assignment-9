@@ -25,7 +25,7 @@ import argparse
 def parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("my_list", type=int, nargs='+', help="use list of\
-     integers")
+     integers without brackets or commas, just numbers separated by space.")
     # without "nargs" this gave error. Importat to run the command multiple
     # times.
     args = parser.parse_args()
